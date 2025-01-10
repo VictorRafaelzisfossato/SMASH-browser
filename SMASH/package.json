@@ -1,0 +1,27 @@
+{
+  "name": "smash-browser",
+  "version": "1.0.0",
+  "description": "SMASH Browser using Chromium",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder --win",
+    "dist": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.smash.browser",
+    "productName": "SMASH Browser",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}

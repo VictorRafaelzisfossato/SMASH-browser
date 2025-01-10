@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .browser-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .tabs-container {
+    display: flex;
+    background-color: #f0f0f0;
+    padding: 5px;
+    overflow-x: scroll;
+  }
+  
+  .tab {
+    padding: 10px;
+    background-color: #ddd;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .address-bar {
+    display: flex;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .address-bar input {
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  .address-bar button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .address-bar button:hover {
+    background-color: #45a049;
+  }
+  
+  #webview-container {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .webview-tab {
+    display: none;
+  }
+  
+  .webview-tab.active {
+    display: block;
+  }
+  
